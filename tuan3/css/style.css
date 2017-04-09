@@ -1,0 +1,49 @@
+body{
+	background-color: yellow;
+}
+p{
+	color: red;
+	text-decoration: underline;
+}
+.vung2 p{
+	color: green;	
+}
+.vung1{
+	margin-left: 60px;
+}
+.vung1 p{
+
+	color: red;
+	background-color: black;
+}
+#vung4 p{
+	color: blue;
+}
+#vung4 h4{
+	color: green;
+}
+
+
+.hinhanh{
+	background-color: red;
+	width: 960px ;
+	height: 300px;
+	margin-left: 50px;	
+}
+.hinhanh img{
+	width: 70%;
+	height: 70%;
+}
+a{
+	text-decoration: unset;
+	color: red;
+}
+
+a:hover{
+	color: black;
+}
+.menu li{
+	display: inline-block;
+	list-style: none;
+	padding-left: 50px;
+}
