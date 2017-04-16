@@ -1,0 +1,89 @@
+/*reset trang */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body{
+	width: 960px;
+	background-color: yellow;
+	margin: 0px auto; /*center*/
+}
+h2{
+	font-size: 50px;
+	text-align: center;
+	color: red;
+	padding: 20px 0px;
+	background-color: lightblue;	
+}
+h3{
+	color: red;
+	text-align: center;
+	padding: 10px; /*trên dưói trái phải*/
+}
+
+.menu{
+	width: 100%; /*set width cho ca vung menu*/
+}
+
+.menu .vung1{
+	width: 33%;/* width vung 1*/
+	float: left; /*lạc trôi bên trái*/
+	background-color: red;
+}
+
+.menu .vung2{
+	width: 33%;
+	float: left;
+	background-color: green;
+}
+
+.menu .vung3{
+	width: 33%;
+	float: left;
+	background-color: white;
+}
+
+
+
+/*thử bố cục đơn giản*/
+
+
+#header{
+	width: 100%;
+}
+#header .title h1{
+	color: #333;
+	text-align: center;
+	padding: 10px 0px; /*trên dưới 10px trái phải 0px*/
+	background-color: lightcyan;
+	margin-bottom: 20px; /*cách dưới*/
+}
+#header .logo{
+	width: 30%;
+	float: left;
+ 
+}
+#header .logo img{
+	max-width: 100%; /*để max-width cho ảnh sau này dễ responsive :3;*/
+}
+#header .header-right{
+	width: 70%;
+	float: left;
+	background-color: lightblue;
+}
+#header .header-right .header-title{
+	width: 100%;
+}
+#header .header-right .header-title p{
+	color: red;
+	font-size: 50px;
+	text-align: center;
+	
+}
+#header .header-right .header-text h1{
+	color: blue;
+	text-align: center;
+	padding: 10px 0px;
+}
