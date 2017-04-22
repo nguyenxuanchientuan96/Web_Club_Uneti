@@ -1,0 +1,44 @@
+/*reset web*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin:0px auto;
+	width: 960px;
+}	
+/*########START-HEADER #########*/
+#header{
+	width: 100%;
+	height: 250px;
+	overflow: hidden; /*tràn thì ẩn đi*/
+	background-color: lightblue;
+}
+	#header .logo{
+		width: 20%;
+		height: 100%;
+		float:left;
+	}
+	#header .logo img{
+		max-width: 100%; /*độ rộng tối đa mà mày có thể được phép*/
+		height: 100%;
+	}
+	#header .menu{
+		widt h: 80%;
+		float: left;
+	}
+	#header .menu ul{
+		width: 100%;
+	}
+	#header .menu li{
+		width: 25%;
+		background-color: red;
+		float: left;
+	}
+	#header .menu ul li{
+		list-style: none;
+	}
+
+
+
+/*####### END - HEADER #######*/
