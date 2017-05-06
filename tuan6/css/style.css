@@ -1,0 +1,117 @@
+/*reset trang web */
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	font-family: Times New
+}
+body{
+	width: 960px; /*  */
+	margin: 0px auto;
+
+}
+#header{
+	width: 100%;
+	height: 250px;
+	overflow: hidden;/* chống tràn*/
+	background-color: lightgreen;
+}
+	#header .logo{
+		width: 30%;
+		height: 100%;
+		float: left;
+	}
+	#header .logo img{
+		max-width: 100%;
+		height: 100%;
+		border-radius: 100px 0px;
+	}
+	#header .header-right{
+		width: 70%;
+		height: 100%;
+		float: left;
+	} 
+		#header .header-right .search{
+			width: 100%;
+			height: 20%;
+      margin-top: 20px;
+		}
+			#header .header-right .search input[type=text]{
+				width: 70%;
+				height: 100%;
+				border-radius: 100px;
+		
+			}
+			#header .header-right .search input[type=submit]{
+				width: 25%;
+				height: 100%;
+				border-radius: 100px;
+				background-color: red;
+		
+			}
+
+		#header .header-right .menu{
+			width: 100%;
+			margin-top: 50px;
+		}
+			#header .header-right .menu ul{
+				width: 100%;
+			}
+			#header .header-right .menu ul li{
+				width: 20%;
+				float: left;
+				list-style:none;
+				transition: 2s ease all; /*chậm thời gian chuyển động*/
+					text-align:center;
+			} 
+			#header .header-right .menu ul li:hover{
+				background-color: red;
+				transition: 2s ease all; 
+				
+			}
+
+
+			#header .header-right .menu ul li a{
+				text-decoration: none;
+				color: red;
+			
+			}
+			#header .header-right .menu ul li a:hover{
+				color: white;
+
+			}
+#content{
+	width: 100%;
+	margin-top: 50px;
+}
+	#content .block-item{
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 50px;
+		background-color: #F36F36;
+	}
+		#content .block-item .block-item-img{
+			width: 40%;
+			float: left;
+		}
+		#content .block-item .block-item-img img{
+			width: 100%;
+		}
+		#content .block-item .block-item-text{
+			width: 60%;
+			float: left;
+		}
+	#content .block-item .block-item-text p{
+		padding:20px 10px;
+	}
+#footer{
+	width: 100%;
+	height: 60px;
+	background-color: lightgreen;
+	text-align: center;
+	margin-bottom: 10px;
+  padding:10px 0px;
+}
+#footer pre{
+	color: red;
+}
