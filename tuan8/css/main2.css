@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Time new Romans, sans-serif;
+  font-size: 16px;
+}
+body{
+  max-width: 960px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+
+}
+a{
+  text-decoration: none;
+}
+video{
+  max-width: 100%;
+}
+ul li{
+  list-style: none;
+  
+}
+#header{
+  background-color: lightgray;
+  overflow: hidden;
+}
+#header .logo{
+  width: 20%;
+  float: left;
+}
+#header .logo img{
+  max-width: 100%;
+  height: auto;
+}
+#header .menu{
+  width: 70%;
+  float: left;
+}
+#header .menu li{
+  float: left;
+  padding: 10px 10px;
+  
+}
+#header .menu ul{
+  overflow: hidden;
+  padding-left: 20px;
+  margin-top: 40px;
+ 
+}
+#header .menu ul li a{
+  font-weight: bold;
+  color: blue;
+  transition: 1s ease all;
+  border-bottom: 2px solid transparent;
+}
+#header .menu ul li a:hover{
+  border-bottom: 2px solid red;
+  transition: 2s ease all;
+}
+#content{
+  overflow: hidden;
+}
+#content #main-content{
+  width: 70%;
+  float: left;
+
+}
+#main-content .block-new{
+	margin-top: 15px;
+}
+#content #slidebar{
+  width: 28%;
+  float: left;
+  margin-left: 2%;
+}
+#content #slidebar .block-new-title{
+  font-size: 16px;
+  color: blue
+}
+#content #slidebar h3{
+  margin: 15px 0px;
+  padding: 5px 0px;
+  color: white;
+  background-color: red;
+  text-align: center
+}
+
+#content #slidebar .block-new{
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+#footer{
+  margin-top: 15px;
+  background-color: lightgray;
+  padding: 20px 0px;
+  margin-bottom: 5px;
+}
+#footer p{
+  color: blue;
+  text-align: center;
+  font-size: 20px;
+}

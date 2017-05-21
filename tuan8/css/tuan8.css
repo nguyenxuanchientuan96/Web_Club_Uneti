@@ -1,0 +1,27 @@
+@media screen and (max-width: 563px){ /*khi kích thước màn hình <563 thì thực hiện:*/
+	#header li{
+		width: 40%; /*một li chiếm 40%*/
+	}
+}
+@media screen and (max-width: 361px){ /*//khi màn hình <361px thì:*/
+	.menu{
+		margin-top:-40px ;
+		position: fixed;
+		right: 0;
+		opacity: 0; /*độ mờ*/
+		transition: 1s ease all; 
+	}
+	.menu:hover{
+		opacity: 1; 
+		transition: 1s ease all;
+	}	
+	#header li{
+		width: 100%;
+	}
+	#content #main-content{
+		width: 100%;
+	}
+	#content #slidebar{
+		width: 100%;
+	}
+}
