@@ -1,3 +1,4 @@
+/*gĩưa and và (max-width: abcpx) phải có dấu cách*/
 @media screen and (max-width: 563px){ /*khi kích thước màn hình <563 thì thực hiện:*/
 	#header li{
 		width: 40%; /*một li chiếm 40%*/
@@ -8,11 +9,11 @@
 		margin-top:-40px ;
 		position: fixed;
 		right: 0;
-		opacity: 0; /*độ mờ*/
+		opacity: 0; /*độ mờ*/ /*=0 tức là nó ẩn cái menu này nhìn thấy gì*/
 		transition: 1s ease all; 
 	}
-	.menu:hover{
-		opacity: 1; 
+	.menu:hover{ 
+		opacity: 1;  /*khi hover vào thì menu hiện rõ*/
 		transition: 1s ease all;
 	}	
 	#header li{
