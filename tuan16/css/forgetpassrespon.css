@@ -1,0 +1,42 @@
+@media screen and (max-width: 510px){
+	#header .menu li{
+    width: 100%;
+  }
+  #header{
+    width: 100%;
+   height: 110px;
+  }
+  .menu{
+    position: fixed;
+    left: 0;
+    margin-left: 20%;
+    opacity:0;
+    background-color:#1F568B;
+    transition: 2s ease all;
+   
+  }
+ 
+  #header:hover .menu{
+    opacity: 1;
+    transition: 2s ease all;
+  }
+ 
+  #header:hover .menu a{
+    color: white;
+  }
+  #header .menu li{
+    padding: 2px 0px;
+    border: 1px solid white;
+  }
+  #header .user{
+    position: fixed;
+    right: 0;
+  }
+  #header .user:hover li{
+      background-color: white ;
+     transition: 2s ease all;
+  }
+  #header .user a{
+    font-size: 10px;
+  }
+}

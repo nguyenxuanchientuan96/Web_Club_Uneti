@@ -1,0 +1,70 @@
+<!doctype html>
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Edit </title>
+		<link rel="stylesheet" type="text/css" href="css/add.css">
+		<link rel="stylesheet" type="text/css" href="css/add-responsive.css">
+	</head>
+	<body>
+		<div id="header">
+			<a class="logo">
+				<img src="img/logo.png" alt="logo" title="logo">
+			</a> <!-- .logo -->
+
+			<div class="menus">
+				<ul>
+					<li> <a href="#"> Trang chủ </a> </li>
+					<li> <a href="#"> Tất cả bài viết </a></li>
+					<li> <a href="#"> Thêm bài viết</a></li>
+					<li> <a href="#"> Tất cả user </a> </li>
+					<li> <a href="#"> Thêm user </a> </li>
+					<li> <a href="#"> Trợ giúp </a> </li>
+					<li> <a href="#"> Thoát </a></li>
+				</ul>
+			</div> <!-- .menu -->
+
+			<div class="user">
+				<ul> 
+					<li> <a href="#"> <img src="img/user.png"> </a>
+						<ul class="sub-menu">
+							<li> <a href="#"> Add account  </a></li>
+							<li> <a href="#"> Sign out </a> </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- #header -->
+
+		<div id="content">
+			<div id="main-content">
+				<h1> SỬA BÀI VIẾT </h1>
+				<form class="form">
+				<div class="content-intro">
+					<p> Tiêu đề </p>
+					<textarea name="txt-intro"></textarea>
+				</div> <!-- .content-intro -->
+				
+				<div class="avatar">
+					<p> Ảnh </p>
+					<textarea name="txt-avatar"></textarea>
+					<input type="file" name="avatar" value="">
+				</div>
+
+				<div class="text-area">
+					<p> Nội dung </p>
+					<textarea name="txt-area"></textarea>
+				</div> <!-- .text-area -->
+
+				<div class="type">
+					<select>
+						<option value="Cong nghe"> Công nghệ </option>
+						<option value="The Thao"> Thể thao </option>
+						<option value="Giai tri"> Giải trí </option>
+					</select>
+				</div>
+				<input type="submit" name="submit-add" value="Thêm">
+				</form>
+			</div>
+		</div> <!-- #content -->
