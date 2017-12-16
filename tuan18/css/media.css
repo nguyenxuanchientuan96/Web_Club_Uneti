@@ -1,0 +1,90 @@
+@media screen and (max-width:566px){
+	#content #main-content{
+		width: 100%;
+	}
+	#header .menu li{
+		width: 28%;
+	}
+	#header .menu ul{
+		margin-top: -4px;
+	}
+	#content #slidebar{
+		width: 90%;
+		margin-left: 5%;
+		
+	}
+	#footer{
+		width: 100%;
+	}
+	
+}
+@media screen and (max-width:518px) and (min-width:320px){
+	#header .menu li{
+		width: 100%;
+	}
+	#header .logo img{
+		width: 100%;
+	
+	}
+	.menu{
+		position: fixed;
+		right: 0;
+		background: gray;
+		transition: 2s ease all;
+		opacity: 0;
+	}
+	#header:hover .menu{
+		opacity: 1;
+		transition: 2s ease all;
+	}
+	#header{
+		position: fixed;
+		height: 105px;
+		width: 100%;
+		opacity: 0.2;
+		transition: 0.4 ease all;
+	}
+	#header:hover{
+		opacity: 1;
+		transition: 0.4s ease all;
+	}
+	#content #main-content{
+		margin-top: 90px;
+	}
+}
+
+
+@media screen and (max-width:320px){
+	#header .menu li{
+		width: 100%;
+	}
+	#header .logo img{
+		width: 100%;
+	
+	}
+	.menu{
+		position: fixed;
+		right: 0;
+		background: gray;
+		transition: 2s ease all;
+		opacity: 0;
+	}
+	#header:hover .menu{
+		opacity: 1;
+		transition: 2s ease all;
+	}
+	#header{
+		position: fixed;
+		height: 65px;
+		width: 100%;
+		opacity: 0.2;
+		transition: 0.4 ease all;
+	}
+	#header:hover{
+		opacity: 1;
+		transition: 0.4s ease all;
+	}
+	#content #main-content{
+		margin-top: 50px;
+	}
+}

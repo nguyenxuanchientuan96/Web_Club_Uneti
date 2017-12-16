@@ -1,0 +1,115 @@
+*{
+  margin:0px;
+  padding:0px;
+  font-size:16px;
+  font-family:Time New Romans, sans-serif;
+  color:#333;
+}
+body{
+  max-width: 768px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+li{
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+}
+video{
+  max-width: 100%;
+  height: auto;
+}
+/* menu */
+#menu {
+  width: 100%;
+  overflow: hidden;
+  background-color:lightcyan;
+}
+#menu .menu-logo{
+  width: 20%;
+  float: left;
+}
+#menu .menu-logo img{
+  max-width: 100%;
+  height: auto;
+}
+#menu .menu-item{
+  width: 80%;
+  overflow: hidden;
+  float: left;
+   margin-top:50px;
+}
+#menu .menu-item li{
+  float:left;
+  padding: 5px 10px;
+ 
+}
+#menu .menu-item li a{
+  font-weight: bold;
+
+  transition: 2s ease all;
+  border-bottom: 2px solid transparent;
+  color: blue;
+}
+#menu ul li a:hover{
+  border-bottom: 2px solid red;
+  transition: 2s ease all;  
+}
+#content{
+  overflow: hidden;
+}
+#content #main-content{
+  width: 75%;
+  float: left;
+}
+#content #main-content h1{
+  color: red;
+  font-size: 25px;
+  padding: 10px 0px;
+  text-align: center;
+}
+#content #slidebar{
+  width: 23%;
+  float: left;
+  background-color: lightyellow;
+  margin-top:15px;
+  margin-left: 1%;
+}
+#content #slidebar h2{
+  color: red;
+  font-size: 25px;
+  text-align: center
+  }
+#content #slidebar ul li { 
+   margin-top: 8px;
+}
+#content #slidebar a{
+  color: green;
+  transition: 1s ease all;
+  border-bottom: 1px solid transparent;
+  
+ 
+}
+#content #slidebar a:hover{
+  border-bottom:  1px solid red;
+  transition: 2s ease all;
+}
+#content p{
+  margin: 5px 0px;
+}
+#footer{
+  width: 100%;
+  background-color:  lightcyan;
+  padding: 30px 0px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#footer p{
+  color: blue;
+  font-size: 20px;
+  text-align: center;
+}

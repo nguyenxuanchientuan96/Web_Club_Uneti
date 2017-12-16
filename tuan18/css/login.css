@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Time New Romans,Arial, sans-serif;
+}
+body{
+	max-width: 960px;
+
+	margin: 0 auto;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+video{
+	max-width: 100%;
+}
+img{
+	max-width: 100%;
+}
+#header{
+  background-color: lightgray;
+  overflow: hidden;
+}
+#header .logo{
+  width: 20%;
+  float: left;
+}
+#header .logo img{
+  max-width: 100%;
+  height: auto;
+}
+#header .menu{
+  width: 70%;
+  float: left;
+}
+#header .menu li{
+  float: left;
+  padding: 10px 10px;
+  
+}
+#header .menu ul{
+  overflow: hidden;
+  padding-left: 20px;
+  margin-top: 40px;
+ 
+}
+#header .menu ul li a{
+  font-weight: bold;
+  color: blue;
+  transition: 1s ease all;
+  border-bottom: 2px solid transparent;
+}
+#header .menu ul li a:hover{
+  border-bottom: 2px solid red;
+  transition: 2s ease all;
+}
+.form {
+  width: 80%;
+  padding:40px ;
+  background-color:white;
+  margin:40px auto;
+  display: block;
+  
+}
+
+.form input , .form .txtpass{
+  width:100%;
+  margin-bottom: 20px;
+  padding:20px 0px;
+  font-size: 16px;
+}
+
+.form input[type=submit]{
+ font-weight: bold;
+  color:white;
+  background-color: #C41111;
+ 
+}
+.form p{
+ width: 100%;
+ text-align: center;
+ transition: 2s ease all;
+ 
+}
+.form p a:hover{
+  color: red;
+  transition: 2s ease all;
+  
+}
