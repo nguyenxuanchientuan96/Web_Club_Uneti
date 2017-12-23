@@ -5,6 +5,5 @@
 		die("Không kết nối được với db");
 	}else{
 		mysqli_set_charset($conn, "utf8");
-	}
-	
+	}	
 ?>
