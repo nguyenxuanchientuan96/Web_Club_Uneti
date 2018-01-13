@@ -1,5 +1,19 @@
 <?php require_once '../inc/lib.php'; ?>
 
+<?php
+	if(isset($_POST["delete"])){
+		$id=$_POST["delete"];
+		$sql="DELETE FROM post WHERE id={$id}";
+		$rs=mysqli_query($conn,$sql);
+		if($rs){
+			echo "Xóa thành công";
+		}
+		else{
+			echo "Thất bại";
+		}
+	}
+
+?>
 <!doctype html>
 <html> 
 	<head>
@@ -86,8 +100,15 @@
 						<td> Tác gỉa </td>
 						<td>
 							<input type="submit" name="submitadd" value="Thêm">
-							<input type="submit" name="submitedit" value="Sửa">
-							<input type="submit" name="submitdel" value="Xóa"> 
+
+							<a href="sua-post.php?id=<?php echo $row['id']; ?>">  Sửa</a>
+
+							<form method="POST">
+										
+											<input type="hidden" name="delete" value="<?php echo $row["id"];  ?>">
+											
+											<button type="submit" onclick="return confirm('bạn có chắc chắn muốn xóa không??')"> Xóa</button>
+										</form>
 						</td>
 					</tr>
 				

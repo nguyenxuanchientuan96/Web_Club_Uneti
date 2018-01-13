@@ -20,6 +20,8 @@
 
 			<li> <a href="admin/danh-sach-post.php"> Danh sách bài viết </a> </li>
 			<li> <a href="#"> Đăng nhập </a> </li>
+			<li> <a href="admin"> Admin </a> </li>
+
 
 
 		</ul>

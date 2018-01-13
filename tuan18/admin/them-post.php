@@ -1,3 +1,4 @@
+<?php require_once '../inc/lib.php';; ?>
 <!doctype html>
 <html> 
 	<head>
@@ -36,34 +37,71 @@
 				</ul>
 			</div>
 		</div> <!-- #header -->
+	<?php
+			if($_SERVER["REQUEST_METHOD"]== "POST"){
+				
+				$tenpost= $_POST['txt-post'];
+				$tieude= $_POST['txt-tieude'];
+				$theloai= $_POST['txt-theloai'];
+				$noidung= $_POST['txt-noidung'];
+				$ngaytao= $_POST['txt-ngaytao'];
+				$tacgia= $_POST['txt-tacgia'];
+				
+				$sql= "INSERT INTO post(ten_post, tieu_de, the_loai, noi_dung, ngay_tao, tac_gia) 
+					   VALUES('{$tenpost}', '{$tieude}', '{$theloai}', '{$noidung}', '{$ngaytao}', '{$tacgia}' )";
+
+				$result= mysqli_query($conn, $sql);
+				
+				if(!$result){
+					echo "khong them thanh cong";
+				}else{
+					echo "them thanh cong";
+				}
+
+			}
+
+	?>
+
 
 		<div id="content">
 		<div id="main-content">
 			<h1> THÊM BÀI VIẾT </h1>
-			<form class="form">
-			<div class="content-intro">
-				<p> Tiêu đề </p>
-				<textarea name="txt-intro"></textarea>
-			</div> <!-- .content-intro -->
+			<form class="form" method="POST" action="">
+			
 			
 			<div class="avatar">
-				<p> Ảnh </p>
-				<textarea name="txt-avatar"></textarea>
-				<input type="file" name="avatar" value="">
+				<p> ten post </p>
+				<textarea name="txt-post"></textarea>
+				
 			</div>
 
 			<div class="text-area">
-				<p> Nội dung </p>
-				<textarea name="txt-area"></textarea>
+				<p> tieu de </p>
+				<textarea name="txt-tieude"></textarea>
 			</div> <!-- .text-area -->
 
-			<div class="type">
-				<select>
-					<option value="The Thao"> Công nghệ </option>
-					<option value="The Thao"> Thể thao </option>
-					<option value="The Thao"> Giải trí </option>
-				</select>
-			</div>
+			<div class="text-area">
+				<p> the loai </p>
+				<textarea name="txt-theloai"></textarea>
+			</div> <!-- .text-area -->
+
+			<div class="text-area">
+				<p> noi dung </p>
+				<textarea name="txt-noidung"></textarea>
+			</div> <!-- .text-area -->
+			<div class="text-area">
+				<p> ngay tao </p>
+				<textarea name="txt-ngaytao"></textarea>
+			</div> <!-- .text-area -->
+
+			<div class="text-area">
+				<p>tac gia </p>
+				<textarea name="txt-tacgia"></textarea>
+			</div> <!-- .text-area -->
+
+			
+
+
 			<input type="submit" name="submit-add" value="Thêm">
 			</form>
 		</div>
